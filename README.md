@@ -14,24 +14,37 @@
 
 ## 🚀 **Quick Start**
 
-### CDN (Recommended)
+### 🤖 **For LLM Users (Copy This Prompt)**
+```
+Create a webpage using Wireframe UI Lite:
+CDN: https://cdn.jsdelivr.net/gh/marcosdocanto/wireframe-ui-lite@latest/wireframe-ui-lite.css
+Build a [dashboard/landing page/app] with classes: wf-nav, wf-card, wf-btn-primary, wf-input, wf-grid
+Show me the complete HTML file.
+```
+
+### ⚡ **One-Line Install**
+```bash
+curl -sSL https://raw.githubusercontent.com/marcosdocanto/wireframe-ui-lite/main/install.sh | bash
+```
+
+### 📦 **CDN (Recommended)**
 ```html
 <link href="https://cdn.jsdelivr.net/gh/marcosdocanto/wireframe-ui-lite@latest/wireframe-ui-lite.css" rel="stylesheet">
 ```
 
-### Download
-```html
-<link href="wireframe-ui-lite.css" rel="stylesheet">
+### 💾 **Download**
+```bash
+curl -o wireframe-ui-lite.css https://cdn.jsdelivr.net/gh/marcosdocanto/wireframe-ui-lite@latest/wireframe-ui-lite.css
 ```
 
-### Example
+### 🎯 **Minimal Example**
 ```html
 <!DOCTYPE html>
 <html>
 <head>
     <link href="https://cdn.jsdelivr.net/gh/marcosdocanto/wireframe-ui-lite@latest/wireframe-ui-lite.css" rel="stylesheet">
 </head>
-<body>
+<body style="padding: 20px; background: #f5f5f5;">
     <div class="wf-card">
         <h1 class="wf-text">Hello World</h1>
         <button class="wf-btn wf-btn-primary">Get Started</button>
