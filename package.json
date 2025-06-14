@@ -1,0 +1,30 @@
+{
+  "name": "wireframe-ui",
+  "version": "1.0.0",
+  "description": "A wireframe-style UI component library for rapid prototyping",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run build:css && npm run copy:docs",
+    "build:css": "tailwindcss -i ./src/styles/main.css -o ./dist/wireframe-ui.css",
+    "build:css:watch": "tailwindcss -i ./src/styles/main.css -o ./dist/wireframe-ui.css --watch",
+    "build:js": "tsc",
+    "copy:docs": "cp ./dist/wireframe-ui.css ./docs/wireframe-ui.css",
+    "dev": "npm run build:css:watch",
+    "example": "live-server examples/",
+    "docs": "npm run build && live-server docs/"
+  },
+  "keywords": ["wireframe", "ui", "components", "prototyping", "sketch", "tailwind"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.0.0",
+    "live-server": "^1.2.2"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "README.md"
+  ]
+}

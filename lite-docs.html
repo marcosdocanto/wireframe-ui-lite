@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe UI Lite - Documentation</title>
+    <link href="wireframe-ui-lite.css" rel="stylesheet">
+    <style>
+        .code-block {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+        }
+        .demo-section {
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            background: #f8fafc;
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 20px; background: #f5f5f5;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <div class="wf-flex" style="gap: 30px;">
+            <!-- Sidebar Navigation -->
+            <div class="wf-sidebar" style="position: sticky; top: 20px; height: fit-content;">
+                <h3 class="wf-text" style="margin-bottom: 20px;">Documentation</h3>
+                <div class="wf-sidebar-item active">
+                    <a href="#getting-started" style="text-decoration: none; color: inherit;">Getting Started</a>
+                </div>
+                <div class="wf-sidebar-item">
+                    <a href="#buttons" style="text-decoration: none; color: inherit;">Buttons</a>
+                </div>
+                <div class="wf-sidebar-item">
+                    <a href="#forms" style="text-decoration: none; color: inherit;">Forms</a>
+                </div>
+                <div class="wf-sidebar-item">
+                    <a href="#layout" style="text-decoration: none; color: inherit;">Layout</a>
+                </div>
+                <div class="wf-sidebar-item">
+                    <a href="#interactive" style="text-decoration: none; color: inherit;">Interactive</a>
+                </div>
+                <div class="wf-sidebar-item">
+                    <a href="#utilities" style="text-decoration: none; color: inherit;">Utilities</a>
+                </div>
+                <div class="wf-sidebar-item">
+                    <a href="#examples" style="text-decoration: none; color: inherit;">Examples</a>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <main style="flex: 1;">
+                <header class="wf-text-center" style="margin-bottom: 3rem;">
+                    <h1 class="wf-text" style="font-size: 3rem; margin-bottom: 1rem;">Wireframe UI Lite</h1>
+                    <p style="font-size: 1.2rem; margin-bottom: 2rem;">Ultra-lightweight wireframe component library for rapid prototyping</p>
+                    <div class="wf-flex" style="gap: 15px; justify-content: center;">
+                        <button class="wf-btn wf-btn-primary">Download CSS</button>
+                        <button class="wf-btn wf-btn-secondary">View on GitHub</button>
+                    </div>
+                </header>
+
+                <!-- Getting Started -->
+                <section id="getting-started" class="wf-card">
+                    <h2 class="wf-text" style="font-size: 2rem; margin-bottom: 1.5rem;">Getting Started</h2>
+                    
+                    <h3 class="wf-text" style="margin-bottom: 1rem;">Quick Start</h3>
+                    <p style="margin-bottom: 1rem;">Include the CSS file and start using classes immediately:</p>
+                    
+                    <div class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;link href="wireframe-ui-lite.css" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="wf-card"&gt;
+        &lt;h1 class="wf-text"&gt;Hello World&lt;/h1&gt;
+        &lt;button class="wf-btn wf-btn-primary"&gt;Get Started&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </div>
+
+                    <div class="demo-section">
+                        <div class="wf-card">
+                            <h1 class="wf-text">Hello World</h1>
+                            <button class="wf-btn wf-btn-primary">Get Started</button>
+                        </div>
+                    </div>
+
+                    <h3 class="wf-text" style="margin: 2rem 0 1rem;">Why Wireframe UI Lite?</h3>
+                    <ul style="margin-left: 20px;">
+                        <li><strong>Ultra-lightweight:</strong> Only ~5KB gzipped</li>
+                        <li><strong>LLM-friendly:</strong> Simple, predictable class names</li>
+                        <li><strong>No dependencies:</strong> Pure CSS, works everywhere</li>
+                        <li><strong>Wireframe aesthetic:</strong> Perfect for prototyping</li>
+                        <li><strong>Mobile responsive:</strong> Works on all devices</li>
+                    </ul>
+                </section>
+
+                <!-- Buttons -->
+                <section id="buttons" class="wf-card">
+                    <h2 class="wf-text" style="font-size: 2rem; margin-bottom: 1.5rem;">Buttons</h2>
+                    
+                    <div class="code-block">
+&lt;button class="wf-btn"&gt;Default Button&lt;/button&gt;
+&lt;button class="wf-btn wf-btn-primary"&gt;Primary Button&lt;/button&gt;
+&lt;button class="wf-btn wf-btn-secondary"&gt;Secondary Button&lt;/button&gt;
+                    </div>
+
+                    <div class="demo-section">
+                        <div class="wf-flex" style="gap: 10px; flex-wrap: wrap;">
+                            <button class="wf-btn">Default Button</button>
+                            <button class="wf-btn wf-btn-primary">Primary Button</button>
+                            <button class="wf-btn wf-btn-secondary">Secondary Button</button>
+                        </div>
+                    </div>
+
+                    <h3 class="wf-text" style="margin: 2rem 0 1rem;">Button Sizes & States</h3>
+                    <div class="code-block">
+&lt;button class="wf-btn wf-btn-primary wf-w-full"&gt;Full Width&lt;/button&gt;
+&lt;a href="#" class="wf-btn wf-btn-secondary"&gt;Link Button&lt;/a&gt;
+                    </div>
+
+                    <div class="demo-section">
+                        <div style="display: grid; gap: 10px;">
+                            <button class="wf-btn wf-btn-primary wf-w-full">Full Width Button</button>
+                            <a href="#" class="wf-btn wf-btn-secondary">Link Button</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Forms -->
+                <section id="forms" class="wf-card">
+                    <h2 class="wf-text" style="font-size: 2rem; margin-bottom: 1.5rem;">Form Elements</h2>
+                    
+                    <div class="code-block">
+&lt;input type="text" class="wf-input" placeholder="Text input"&gt;
+&lt;input type="email" class="wf-input" placeholder="Email input"&gt;
+&lt;select class="wf-input"&gt;
+    &lt;option&gt;Choose option&lt;/option&gt;
+    &lt;option&gt;Option 1&lt;/option&gt;
+    &lt;option&gt;Option 2&lt;/option&gt;
+&lt;/select&gt;
+&lt;textarea class="wf-input" placeholder="Textarea" rows="3"&gt;&lt;/textarea&gt;
+                    </div>
+
+                    <div class="demo-section">
+                        <div style="display: grid; gap: 15px;">
+                            <input type="text" class="wf-input" placeholder="Text input">
+                            <input type="email" class="wf-input" placeholder="Email input">
+                            <select class="wf-input">
+                                <option>Choose option</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                            </select>
+                            <textarea class="wf-input" placeholder="Textarea" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <h3 class="wf-text" style="margin: 2rem 0 1rem;">Complete Form Example</h3>
+                    <div class="code-block">
+&lt;form class="wf-card"&gt;
+    &lt;h3 class="wf-text"&gt;Contact Form&lt;/h3&gt;
+    &lt;div style="display: grid; gap: 15px;"&gt;
+        &lt;input type="text" class="wf-input" placeholder="Name" required&gt;
+        &lt;input type="email" class="wf-input" placeholder="Email" required&gt;
+        &lt;textarea class="wf-input" placeholder="Message" rows="4"&gt;&lt;/textarea&gt;
+        &lt;button type="submit" class="wf-btn wf-btn-primary wf-w-full"&gt;Send&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+                    </div>
+
+                    <div class="demo-section">
+                        <form class="wf-card">
+                            <h3 class="wf-text">Contact Form</h3>
+                            <div style="display: grid; gap: 15px;">
+                                <input type="text" class="wf-input" placeholder="Name" required>
+                                <input type="email" class="wf-input" placeholder="Email" required>
+                                <textarea class="wf-input" placeholder="Message" rows="4"></textarea>
+                                <button type="submit" class="wf-btn wf-btn-primary wf-w-full">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Layout -->
+                <section id="layout" class="wf-card">
+                    <h2 class="wf-text" style="font-size: 2rem; margin-bottom: 1.5rem;">Layout Components</h2>
+                    
+                    <h3 class="wf-text" style="margin-bottom: 1rem;">Cards</h3>
+                    <div class="code-block">
+&lt;div class="wf-card"&gt;
+    &lt;h3 class="wf-text"&gt;Card Title&lt;/h3&gt;
+    &lt;p&gt;Card content goes here.&lt;/p&gt;
+&lt;/div&gt;
+                    </div>
+
+                    <div class="demo-section">
+                        <div class="wf-card">
+                            <h3 class="wf-text">Card Title</h3>
+                            <p>Card content goes here with some example text.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="wf-text" style="margin: 2rem 0 1rem;">Navigation</h3>
+                    <div class="code-block">
+&lt;nav class="wf-nav"&gt;
+    &lt;div class="wf-text"&gt;Brand&lt;/div&gt;
+    &lt;div class="wf-flex" style="gap: 20px;"&gt;
+        &lt;a href="#" class="wf-text"&gt;Home&lt;/a&gt;
+        &lt;a href="#" class="wf-text"&gt;About&lt;/a&gt;
+        &lt;a href="#" class="wf-text"&gt;Contact&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+                    </div>
+
+                    <div class="demo-section">
+                        <nav class="wf-nav">
+                            <div class="wf-text">Brand</div>
+                            <div class="wf-flex" style="gap: 20px;">
+                                <a href="#" class="wf-text">Home</a>
+                                <a href="#" class="wf-text">About</a>
+                                <a href="#" class="wf-text">Contact</a>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <h3 class="wf-text" style="margin: 2rem 0 1rem;">Grid Layout</h3>
+                    <div class="code-block">
+&lt;div class="wf-grid"&gt;
+    &lt;div class="wf-card"&gt;Item 1&lt;/div&gt;
+    &lt;div class="wf-card"&gt;Item 2&lt;/div&gt;
+    &lt;div class="wf-card"&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;
+                    </div>
+
+                    <div class="demo-section">
+                        <div class="wf-grid">
+                            <div class="wf-card">Item 1</div>
+                            <div class="wf-card">Item 2</div>
+                            <div class="wf-card">Item 3</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Interactive -->
+                <section id="interactive" class="wf-card">
+                    <h2 class="wf-text" style="font-size: 2rem; margin-bottom: 1.5rem;">Interactive Components</h2>
+                    
+                    <h3 class="wf-text" style="margin-bottom: 1rem;">Badges</h3>
+                    <div class="code-block">
+&lt;span class="wf-badge"&gt;Default&lt;/span&gt;
+&lt;span class="wf-badge wf-badge-primary"&gt;Primary&lt;/span&gt;
+&lt;span class="wf-badge wf-badge-success"&gt;Success&lt;/span&gt;
+&lt;span class="wf-badge wf-badge-warning"&gt;Warning&lt;/span&gt;
+&lt;span class="wf-badge wf-badge-danger"&gt;Danger&lt;/span&gt;
+                    </div>
+
+                    <div class="demo-section">
+                        <div class="wf-flex" style="gap: 8px; flex-wrap: wrap;">
+                            <span class="wf-badge">Default</span>
+                            <span class="wf-badge wf-badge-primary">Primary</span>
+                            <span class="wf-badge wf-badge-success">Success</span>
+                            <span class="wf-badge wf-badge-warning">Warning</span>
+                            <span class="wf-badge wf-badge-danger">Danger</span>
+                        </div>
+                    </div>
+
+                    <h3 class="wf-text" style="margin: 2rem 0 1rem;">Progress Bar</h3>
+                    <div class="code-block">
+&lt;div class="wf-progress"&gt;
+    &lt;div class="wf-progress-bar" style="width: 65%"&gt;&lt;/div&gt;
+&lt;/div&gt;
+                    </div>
+
+                    <div class="demo-section">
+                        <div class="wf-progress">
+                            <div class="wf-progress-bar" style="width: 65%"></div>
+                        </div>
+                        <p style="margin-top: 8px;">65% complete</p>
+                    </div>
+
+                    <h3 class="wf-text" style="margin: 2rem 0 1rem;">Tooltip</h3>
+                    <div class="code-block">
+&lt;div class="wf-tooltip"&gt;
+    &lt;span class="wf-text"&gt;Hover me&lt;/span&gt;
+    &lt;div class="wf-tooltip-content"&gt;Helpful information!&lt;/div&gt;
+&lt;/div&gt;
+                    </div>
+
+                    <div class="demo-section">
+                        <div class="wf-tooltip">
+                            <span class="wf-text">Hover me for tooltip</span>
+                            <div class="wf-tooltip-content">Helpful information!</div>
+                        </div>
+                    </div>
+
+                    <h3 class="wf-text" style="margin: 2rem 0 1rem;">Tabs</h3>
+                    <div class="code-block">
+&lt;div class="wf-tabs"&gt;
+    &lt;div class="wf-tab-list"&gt;
+        &lt;div class="wf-tab active"&gt;Tab 1&lt;/div&gt;
+        &lt;div class="wf-tab"&gt;Tab 2&lt;/div&gt;
+        &lt;div class="wf-tab"&gt;Tab 3&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="wf-tab-content"&gt;
+        Content for the active tab
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </div>
+
+                    <div class="demo-section">
+                        <div class="wf-tabs">
+                            <div class="wf-tab-list">
+                                <div class="wf-tab active">Overview</div>
+                                <div class="wf-tab">Features</div>
+                                <div class="wf-tab">Pricing</div>
+                            </div>
+                            <div class="wf-tab-content">
+                                <h4 class="wf-text">Overview</h4>
+                                <p>This is the overview tab content showing information about the product.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Utilities -->
+                <section id="utilities" class="wf-card">
+                    <h2 class="wf-text" style="font-size: 2rem; margin-bottom: 1.5rem;">Utility Classes</h2>
+                    
+                    <h3 class="wf-text" style="margin-bottom: 1rem;">Layout Utilities</h3>
+                    <div class="code-block">
+&lt;!-- Display --&gt;
+&lt;div class="wf-flex"&gt;Flexbox container&lt;/div&gt;
+&lt;div class="wf-grid"&gt;Grid container&lt;/div&gt;
+&lt;div class="wf-block"&gt;Block element&lt;/div&gt;
+&lt;div class="wf-hidden"&gt;Hidden element&lt;/div&gt;
+
+&lt;!-- Spacing --&gt;
+&lt;div class="wf-p-sm"&gt;Small padding&lt;/div&gt;
+&lt;div class="wf-p-md"&gt;Medium padding&lt;/div&gt;
+&lt;div class="wf-p-lg"&gt;Large padding&lt;/div&gt;
+
+&lt;div class="wf-m-sm"&gt;Small margin&lt;/div&gt;
+&lt;div class="wf-m-md"&gt;Medium margin&lt;/div&gt;
+&lt;div class="wf-m-lg"&gt;Large margin&lt;/div&gt;
+
+&lt;!-- Text alignment --&gt;
+&lt;div class="wf-text-center"&gt;Centered&lt;/div&gt;
+&lt;div class="wf-text-left"&gt;Left aligned&lt;/div&gt;
+&lt;div class="wf-text-right"&gt;Right aligned&lt;/div&gt;
+
+&lt;!-- Sizing --&gt;
+&lt;div class="wf-w-full"&gt;Full width&lt;/div&gt;
+&lt;div class="wf-h-full"&gt;Full height&lt;/div&gt;
+                    </div>
+                </section>
+
+                <!-- Examples -->
+                <section id="examples" class="wf-card">
+                    <h2 class="wf-text" style="font-size: 2rem; margin-bottom: 1.5rem;">Complete Examples</h2>
+                    
+                    <h3 class="wf-text" style="margin-bottom: 1rem;">Landing Page</h3>
+                    <div class="code-block">
+&lt;!-- Navigation --&gt;
+&lt;nav class="wf-nav"&gt;
+    &lt;div class="wf-text"&gt;Brand&lt;/div&gt;
+    &lt;div class="wf-flex" style="gap: 20px;"&gt;
+        &lt;a href="#" class="wf-text"&gt;Home&lt;/a&gt;
+        &lt;a href="#" class="wf-text"&gt;Features&lt;/a&gt;
+        &lt;a href="#" class="wf-text"&gt;Pricing&lt;/a&gt;
+        &lt;a href="#" class="wf-text"&gt;Contact&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;!-- Hero Section --&gt;
+&lt;div class="wf-card wf-text-center"&gt;
+    &lt;h1 class="wf-text" style="font-size: 3rem;"&gt;Welcome to Our Product&lt;/h1&gt;
+    &lt;p style="font-size: 1.2rem; margin: 2rem 0;"&gt;The best solution for your needs&lt;/p&gt;
+    &lt;div class="wf-flex" style="gap: 15px; justify-content: center;"&gt;
+        &lt;button class="wf-btn wf-btn-primary"&gt;Get Started&lt;/button&gt;
+        &lt;button class="wf-btn wf-btn-secondary"&gt;Learn More&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Features Grid --&gt;
+&lt;div class="wf-grid"&gt;
+    &lt;div class="wf-card"&gt;
+        &lt;h3 class="wf-text"&gt;Feature 1&lt;/h3&gt;
+        &lt;p&gt;Description of the first feature&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="wf-card"&gt;
+        &lt;h3 class="wf-text"&gt;Feature 2&lt;/h3&gt;
+        &lt;p&gt;Description of the second feature&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="wf-card"&gt;
+        &lt;h3 class="wf-text"&gt;Feature 3&lt;/h3&gt;
+        &lt;p&gt;Description of the third feature&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </div>
+
+                    <h3 class="wf-text" style="margin: 2rem 0 1rem;">Dashboard Layout</h3>
+                    <div class="code-block">
+&lt;div class="wf-flex" style="gap: 20px;"&gt;
+    &lt;!-- Sidebar --&gt;
+    &lt;div class="wf-sidebar"&gt;
+        &lt;h3 class="wf-text"&gt;Menu&lt;/h3&gt;
+        &lt;div class="wf-sidebar-item active"&gt;Dashboard&lt;/div&gt;
+        &lt;div class="wf-sidebar-item"&gt;Analytics&lt;/div&gt;
+        &lt;div class="wf-sidebar-item"&gt;Settings&lt;/div&gt;
+        &lt;div class="wf-sidebar-item"&gt;Profile&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;!-- Main Content --&gt;
+    &lt;div style="flex: 1;"&gt;
+        &lt;div class="wf-card"&gt;
+            &lt;h2 class="wf-text"&gt;Dashboard Overview&lt;/h2&gt;
+            &lt;div class="wf-grid"&gt;
+                &lt;div class="wf-card"&gt;
+                    &lt;h4 class="wf-text"&gt;Users&lt;/h4&gt;
+                    &lt;p style="font-size: 2rem;"&gt;1,234&lt;/p&gt;
+                    &lt;span class="wf-badge wf-badge-success"&gt;+12%&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="wf-card"&gt;
+                    &lt;h4 class="wf-text"&gt;Revenue&lt;/h4&gt;
+                    &lt;p style="font-size: 2rem;"&gt;$45,678&lt;/p&gt;
+                    &lt;span class="wf-badge wf-badge-warning"&gt;-3%&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="wf-card wf-text-center" style="margin-top: 3rem;">
+                    <h3 class="wf-text">Wireframe UI Lite</h3>
+                    <p>Ultra-lightweight wireframe components for rapid prototyping</p>
+                    <div class="wf-flex" style="gap: 15px; justify-content: center; margin-top: 1rem;">
+                        <button class="wf-btn wf-btn-secondary">GitHub</button>
+                        <button class="wf-btn wf-btn-secondary">Download</button>
+                        <button class="wf-btn wf-btn-secondary">Examples</button>
+                    </div>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">
+                        Only ~5KB gzipped • LLM-friendly • Zero dependencies
+                    </p>
+                </footer>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
