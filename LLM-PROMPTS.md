@@ -2,7 +2,16 @@
 
 ## 🚀 **Quick Install Prompt for LLMs**
 
-### **Basic Installation Prompt:**
+### **NPM Installation Prompt:**
+```
+I want to use Wireframe UI Lite in my project. Show me how to:
+1. Install it via NPM: npm install wireframe-ui-lite
+2. Import it in my [React/Vue/HTML] project: import 'wireframe-ui-lite/wireframe-ui-lite.css'
+3. Create a basic example with navigation bar, card, and button using classes: wf-nav, wf-card, wf-btn-primary
+4. Show complete working code
+```
+
+### **CDN Installation Prompt:**
 ```
 Install Wireframe UI Lite in my project. Create an HTML file that includes the CDN link and shows me a basic example with a navigation bar, card, and button.
 

@@ -16,6 +16,17 @@
 ## 🚀 **Quick Start**
 
 ### 🤖 **For LLM Users (Copy This Prompt)**
+
+**NPM Project:**
+```
+I have wireframe-ui-lite installed via NPM. Create a [React/Vue/HTML] component that:
+1. Imports: import 'wireframe-ui-lite/wireframe-ui-lite.css'
+2. Uses classes: wf-nav, wf-card, wf-btn-primary, wf-input, wf-grid
+3. Builds a [dashboard/landing page/app]
+4. Shows complete working code
+```
+
+**CDN Project:**
 ```
 Create a webpage using Wireframe UI Lite:
 CDN: https://cdn.jsdelivr.net/gh/marcosdocanto/wireframe-ui-lite@latest/wireframe-ui-lite.css
@@ -32,8 +43,20 @@ curl -sSL https://raw.githubusercontent.com/marcosdocanto/wireframe-ui-lite/main
 ```bash
 npm install wireframe-ui-lite
 ```
+
+**HTML Usage:**
 ```html
 <link href="node_modules/wireframe-ui-lite/wireframe-ui-lite.css" rel="stylesheet">
+```
+
+**Build Tool Import:**
+```javascript
+import 'wireframe-ui-lite/wireframe-ui-lite.css';
+```
+
+**CSS Import:**
+```css
+@import 'wireframe-ui-lite/wireframe-ui-lite.css';
 ```
 
 ### 🌐 **CDN (Recommended)**
