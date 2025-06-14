@@ -1,13 +1,17 @@
 {
   "name": "wireframe-ui-lite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ultra-lightweight wireframe component library for rapid prototyping and LLM-friendly interfaces",
   "main": "wireframe-ui-lite.css",
   "style": "wireframe-ui-lite.css",
   "files": [
     "wireframe-ui-lite.css",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "NPM-USAGE.md",
+    "LLM-PROMPTS.md",
+    "QUICK-START.md",
+    "examples/"
   ],
   "scripts": {
     "build": "echo 'No build needed - pure CSS'",
