@@ -1,30 +1,48 @@
 {
-  "name": "wireframe-ui",
+  "name": "wireframe-ui-lite",
   "version": "1.0.0",
-  "description": "A wireframe-style UI component library for rapid prototyping",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "npm run build:css && npm run copy:docs",
-    "build:css": "tailwindcss -i ./src/styles/main.css -o ./dist/wireframe-ui.css",
-    "build:css:watch": "tailwindcss -i ./src/styles/main.css -o ./dist/wireframe-ui.css --watch",
-    "build:js": "tsc",
-    "copy:docs": "cp ./dist/wireframe-ui.css ./docs/wireframe-ui.css",
-    "dev": "npm run build:css:watch",
-    "example": "live-server examples/",
-    "docs": "npm run build && live-server docs/"
-  },
-  "keywords": ["wireframe", "ui", "components", "prototyping", "sketch", "tailwind"],
-  "author": "Your Name",
-  "license": "MIT",
-  "devDependencies": {
-    "tailwindcss": "^3.4.0",
-    "typescript": "^5.0.0",
-    "live-server": "^1.2.2"
-  },
+  "description": "Ultra-lightweight wireframe component library for rapid prototyping and LLM-friendly interfaces",
+  "main": "wireframe-ui-lite.css",
+  "style": "wireframe-ui-lite.css",
   "files": [
-    "dist/",
-    "src/",
-    "README.md"
-  ]
+    "wireframe-ui-lite.css",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "echo 'No build needed - pure CSS'",
+    "dev": "python3 -m http.server 8080",
+    "serve": "python3 -m http.server 8080",
+    "prepublishOnly": "echo 'Publishing wireframe-ui-lite.css to NPM'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosdocanto/wireframe-ui-lite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcosdocanto/wireframe-ui-lite/issues"
+  },
+  "homepage": "https://marcosdocanto.github.io/wireframe-ui-lite/",
+  "keywords": [
+    "css",
+    "wireframe",
+    "prototyping",
+    "ui",
+    "framework",
+    "lightweight",
+    "llm",
+    "ai",
+    "sketch",
+    "rapid-prototyping",
+    "component-library",
+    "no-build",
+    "cdn",
+    "hand-drawn",
+    "comic-sans"
+  ],
+  "author": "Marcos Do Canto <marcosdocanto@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
 }

@@ -27,12 +27,20 @@ Show me the complete HTML file.
 curl -sSL https://raw.githubusercontent.com/marcosdocanto/wireframe-ui-lite/main/install.sh | bash
 ```
 
-### 📦 **CDN (Recommended)**
+### 📦 **NPM Install**
+```bash
+npm install wireframe-ui-lite
+```
+```html
+<link href="node_modules/wireframe-ui-lite/wireframe-ui-lite.css" rel="stylesheet">
+```
+
+### 🌐 **CDN (Recommended)**
 ```html
 <link href="https://cdn.jsdelivr.net/gh/marcosdocanto/wireframe-ui-lite@latest/wireframe-ui-lite.css" rel="stylesheet">
 ```
 
-### 💾 **Download**
+### 💾 **Direct Download**
 ```bash
 curl -o wireframe-ui-lite.css https://cdn.jsdelivr.net/gh/marcosdocanto/wireframe-ui-lite@latest/wireframe-ui-lite.css
 ```

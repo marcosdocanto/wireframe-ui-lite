@@ -37,17 +37,25 @@ Show me the full HTML file.
 
 ### **💻 For Developers**
 
-**Option 1: CDN (Recommended)**
+**Option 1: NPM Install**
+```bash
+npm install wireframe-ui-lite
+```
+```html
+<link href="node_modules/wireframe-ui-lite/wireframe-ui-lite.css" rel="stylesheet">
+```
+
+**Option 2: CDN (Recommended)**
 ```html
 <link href="https://cdn.jsdelivr.net/gh/marcosdocanto/wireframe-ui-lite@latest/wireframe-ui-lite.css" rel="stylesheet">
 ```
 
-**Option 2: Download**
+**Option 3: Direct Download**
 ```bash
 curl -o wireframe-ui-lite.css https://cdn.jsdelivr.net/gh/marcosdocanto/wireframe-ui-lite@latest/wireframe-ui-lite.css
 ```
 
-**Option 3: Git Clone**
+**Option 4: Git Clone**
 ```bash
 git clone https://github.com/marcosdocanto/wireframe-ui-lite.git
 cd wireframe-ui-lite
