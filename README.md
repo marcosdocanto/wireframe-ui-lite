@@ -4,6 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Size](https://img.shields.io/badge/Size-~5KB-brightgreen.svg)](https://github.com/marcosdocanto/wireframe-ui-lite)
+[![NPM](https://img.shields.io/npm/v/wireframe-ui-lite.svg)](https://www.npmjs.com/package/wireframe-ui-lite)
 [![CDN](https://img.shields.io/badge/CDN-jsDelivr-orange.svg)](https://cdn.jsdelivr.net/gh/marcosdocanto/wireframe-ui-lite@latest/wireframe-ui-lite.css)
 
 ## 🎯 **Perfect For**
