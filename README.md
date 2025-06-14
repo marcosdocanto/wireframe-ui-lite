@@ -1,3 +1,5 @@
+![Screenshot 2025-06-14 at 05 44 24](https://github.com/user-attachments/assets/95548563-8dab-4d83-b7d8-b3172b2f8757)
+
 # Wireframe UI Lite
 
 **Ultra-lightweight wireframe component library for rapid prototyping and LLM-friendly interfaces**
